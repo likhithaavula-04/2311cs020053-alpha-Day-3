@@ -1,0 +1,558 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e6497711-31e4-407a-bbab-98b725649d63",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 8, 9, 10}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 ={1,8,9,0,10,9,0,1,9}\n",
+    "print(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "18058b5b-332a-461c-84c6-778f92f96a7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 8, 9, 10}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 ={1,8,9,0,10,9,0,1,9}\n",
+    "print(s1)\n",
+    "print(type(s1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9bf1e68c-b02a-4572-badc-1ba4277dc379",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lst1 = [1,5,6,7,4,8,8,]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "7d58a6f8-27ec-4e1e-a055-5cd7913de21a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 4, 5, 6, 7, 8}"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s2 = set(lst1)\n",
+    "s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "d2c380e0-8c21-42be-ae3f-1d6a832b2cc1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1 = {1,2,3,4}\n",
+    "s2 = {5,6,7,8}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "fb22a175-7fe0-4cd3-997d-85aed02e05c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6, 7, 8}"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1 | s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "be92ca52-604d-47b0-bc43-9118d6dd5ac2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6, 7, 8}"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.union(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "3ed82957-73a4-4eac-921c-f6ce7db3cc4b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1 = {1,2,3}\n",
+    "s2 = {3,4,5}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "36922deb-e8cd-43e4-b974-08073983b54e",
+   "metadata": {},
+   "source": [
+    "s1 & s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "13587e7f-4bf1-4f69-b129-920bdb041148",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{3}"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.intersection(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "d415267a-d073-4d7d-b20a-db2469dcff28",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2}"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1 - s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "5a5fa588-6b52-4d67-962f-383e16d04aaa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{4, 5}"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s2 - s1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "b79ccf39-4bc5-45ae-acd0-a2929d6cfbe9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1 = {1,2,3,5,6,7}\n",
+    "s2 = {1,2,3}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "ae61cf30-602c-449c-ad97-0960395874fe",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s2.issubset(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "e78f7c87-217d-4c50-b5f3-9228c825d5e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.issubset(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "53a76170-b694-404f-877f-ead46fb5e4f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s2.issuperset(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "1440e7b6-e561-41d8-99d5-e3729d93d492",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.issuperset(s2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b58ef3d6-124d-44a2-8234-3e37b9e1a13e",
+   "metadata": {},
+   "source": [
+    "### strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "ff9b60fd-f443-4bb6-b5b8-7a7ba33a0825",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "str1 =\"Welcome aiml class\"\n",
+    "str2 = \"We started with python\"\n",
+    "str3 = '''This is an awesome class'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "d484f32d-a400-49a3-9cb4-1bf58a50bf97",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n",
+      "<class 'str'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type (str1))\n",
+    "print(type (str2))\n",
+    "print(type (str3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "317243fa-d7a9-454d-99bb-3637a3147ca2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome aiml class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'me ai'"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "print(str1)\n",
+    "str1[5:10]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "6b1c52cb-49c1-4d58-a3d8-93ab6c6d105b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome aiml class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "['Welcome', 'aiml', 'class']"
+      ]
+     },
+     "execution_count": 78,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "print(str1)\n",
+    "str1.split()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "8652db93-3773-4dc0-94fb-161a95afd0cd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Welcome', 'aiml', 'class']"
+      ]
+     },
+     "execution_count": 81,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "['Welcome', 'aiml', 'class']\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "8406c8b8-b55f-478c-8533-dff6faeb5693",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'WWelcome aiml classeWelcome aiml class Welcome aiml classsWelcome aiml classtWelcome aiml classaWelcome aiml classrWelcome aiml classtWelcome aiml classeWelcome aiml classdWelcome aiml class Welcome aiml classwWelcome aiml classiWelcome aiml classtWelcome aiml classhWelcome aiml class Welcome aiml classpWelcome aiml classyWelcome aiml classtWelcome aiml classhWelcome aiml classoWelcome aiml classn'"
+      ]
+     },
+     "execution_count": 85,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str1.join(str2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "71c28430-3fbf-4fab-b800-1c200d14927c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'WThis is an awesome classeThis is an awesome classlThis is an awesome classcThis is an awesome classoThis is an awesome classmThis is an awesome classeThis is an awesome class This is an awesome classaThis is an awesome classiThis is an awesome classmThis is an awesome classlThis is an awesome class This is an awesome classcThis is an awesome classlThis is an awesome classaThis is an awesome classsThis is an awesome classs'"
+      ]
+     },
+     "execution_count": 90,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str3.join(str1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "ab1ff127-b760-4c97-bcf8-19f94e6671b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'H e l l o ,   h o w   a r e   y o u ?'"
+      ]
+     },
+     "execution_count": 92,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str4 = \"Hello, how are you?\"\n",
+    "' '.join(str4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "1411a3e9-f6a4-47ea-8a8f-8ce875384a50",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'   Hello, How are you?   '"
+      ]
+     },
+     "execution_count": 97,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str5 = \"   Hello, How are you?   \"\n",
+    "str5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6c5fbaec-abbf-44a5-b1d5-c03f53d441fd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "be3f88dd-9b31-4623-9303-31aafd25d64e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bbca5395-50d3-4949-a16f-941ac2e64f67",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
